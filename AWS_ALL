@@ -1,0 +1,140 @@
+------------  Environment variable   ----------------
+EC2_HOME
+C:\AWS\ec2\ec2-api-tools
+
+path
+%EC2_HOME%\bin
+
+classpath
+%EC2_HOME%\lib
+
+EC2_CERT
+C:\AWS\AWSKeys\cert-NNTFNFIA756QKGDG6HUQOPN4423UF4VI.pem
+
+EC2_PRIVATE_KEY
+C:\AWS\AWSKeys\pk-NNTFNFIA756QKGDG6HUQOPN4423UF4VI.pem
+
+-----------------------------------------------------------------
+
+CLI Tool download link – http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip
+Public DNS: ec2-54-187-164-175.us-west-2.compute.amazonaws.com (changed)
+Elastic IP: 54.187.168.238
+AWS Account Number 7262-0319-8515
+
+Default user name : ec2-user
+
+Install Apache : sudo yum -y install httpd mod_ssl
+sudo /etc/init.d/httpd start
+sudo vi /var/www/html/index.html
+
+<h1> AWS World </h1>
+<h2> <color:blue> Hi! Welcome to AWS World by Ravi </color> </h2> 
+<p> This is Demo & page coming from default apache index.html file </p>
+<h3> <color:red> Lets enjoy... :)</color> </h3> 
+
+/etc/httpd/conf/httpd.conf
+
+
+
+
+
+
+
+
+
+
+* Note: KeyPair file - required to connect with INSTANCE (ppk- linux) 
+                       (pem - window instance)
+****************************** ravi1.ppk ****************************
+PuTTY-User-Key-File-2: ssh-rsa
+Encryption: none
+Comment: imported-openssh-key
+Public-Lines: 6
+AAAAB3NzaC1yc2EAAAADAQABAAABAQCdBvqqhyyx1OTYLR89IRZLum+wb2qXrQTk
+N7rjSZFtXFvUzUJdR4gJPXOsvjrKI7BIZmkBpoFw6SX63alW62wCpJ/zyIzN9YKe
+YJ0BQlANkABWhaVRoJX/i791+n1dFnkB2Ekz6htjEZO1HpJaLk+QdewyY+FfoVd7
+CbRT4kya4xcYMYjH1Ia6gJcWBLhrCzo3bOBLlja5pm2WIEwrdQtdbl2i4apH2Rjw
+9k+MQn/fpDEY8XtE75uNQgLvdUwdRsp1Ecx1OvGtrMwL9Jojb1S6qrb1czEOfK3E
+gTFxl5fHsC4iUZTLeOQ84m03mw6WRgbf9TLI1EZVrXcn+l+9kDfh
+Private-Lines: 14
+AAABAEbdR3J93mXCtiP4+QgVToKOeKkfHvOkWXjEzcqVANRhwe+fUjvWdEX3PaTP
+lKh0wrFpxinAgtn53fIA5tMbG3t139mcwC6ShYgEAdb3njkAq6ZgWeMknYzd/GG5
+0amY4rM6cI7FL+bdn9M1IMch7zY6gYWcHbGSlnAoSQEyN3AOJpNGuFIBeidMScMs
+SZYTcmmpmf4q/DgozmLCaKeDFsWC9nJYy5CiRdbOdayrrFwJ8f70n8PRMK0O1WmP
+0nC+ZxH0pgKX/4I+VmMTkjEGKFWoDmjeIKUvkQoOGMRbw4Ct79O1UgqeqA6HxQRx
+cGyBnYlUpJZnhoqa5qd3gagdvYEAAACBANafZEp8bfQ6UONqgVznExXAuon5J96Z
+WEwgE8clZ0YlbsSFde9/qwkFTGvIvtTSUo56ZU4/f7cBD4tl+Ab2Wcce9SPWHLRo
+PRZIBsn3c0ZKp4873PXL2TxCU47Ry7i48RRw8tDlGcv4prZSB4k6cQhmjpwEL9nw
+wsZLkPJ2JW3FAAAAgQC7TP4rLTGzu1XYykZhYYLEcgW/Bd8xh4GpbZgWsv8JNmQJ
+8FlCWhk7iSjYy74r64q13JpzlBL+8f31JQnNsu6+6zv1NqTnP8biapXlLsBa665d
+GugQ/fH7o4/etTkkQ7TquvNinFeX1z4beUo3nS6UbyIxTB6q+TpP5aMq8fk/bQAA
+AIEAqRcVp6PoTbWAZQueMjkiUaTX//UMJgOe8s4d3lB/HRQwcgVC1xM9F5DJcY99
+HoS4PerGT6dfSLSplIVXWNbtmiEJoOFWGAjHxtGVyojtplptyaJBZPQgqtduGGsf
+HZSWiTlM4eI2UCRoI5Bg7ziIA0gvvGY0PHwrysSjwTdsFII=
+Private-MAC: e89dbd39fef6646b03787c5095adc88867a50a43
+***************************************************************************
+
+****************************** ravi1.pem ***********************************
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAnQb6qocssdTk2C0fPSEWS7pvsG9ql60E5De640mRbVxb1M1CXUeICT1zrL46
+yiOwSGZpAaaBcOkl+t2pVutsAqSf88iMzfWCnmCdAUJQDZAAVoWlUaCV/4u/dfp9XRZ5AdhJM+ob
+YxGTtR6SWi5PkHXsMmPhX6FXewm0U+JMmuMXGDGIx9SGuoCXFgS4aws6N2zgS5Y2uaZtliBMK3UL
+XW5douGqR9kY8PZPjEJ/36QxGPF7RO+bjUIC73VMHUbKdRHMdTrxrazMC/SaI29Uuqq29XMxDnyt
+xIExcZeXx7AuIlGUy3jkPOJtN5sOlkYG3/UyyNRGVa13J/pfvZA34QIDAQABAoIBAEbdR3J93mXC
+tiP4+QgVToKOeKkfHvOkWXjEzcqVANRhwe+fUjvWdEX3PaTPlKh0wrFpxinAgtn53fIA5tMbG3t1
+39mcwC6ShYgEAdb3njkAq6ZgWeMknYzd/GG50amY4rM6cI7FL+bdn9M1IMch7zY6gYWcHbGSlnAo
+SQEyN3AOJpNGuFIBeidMScMsSZYTcmmpmf4q/DgozmLCaKeDFsWC9nJYy5CiRdbOdayrrFwJ8f70
+n8PRMK0O1WmP0nC+ZxH0pgKX/4I+VmMTkjEGKFWoDmjeIKUvkQoOGMRbw4Ct79O1UgqeqA6HxQRx
+cGyBnYlUpJZnhoqa5qd3gagdvYECgYEA1p9kSnxt9DpQ42qBXOcTFcC6ifkn3plYTCATxyVnRiVu
+xIV173+rCQVMa8i+1NJSjnplTj9/twEPi2X4BvZZxx71I9YctGg9FkgGyfdzRkqnjzvc9cvZPEJT
+jtHLuLjxFHDy0OUZy/imtlIHiTpxCGaOnAQv2fDCxkuQ8nYlbcUCgYEAu0z+Ky0xs7tV2MpGYWGC
+xHIFvwXfMYeBqW2YFrL/CTZkCfBZQloZO4ko2Mu+K+uKtdyac5QS/vH99SUJzbLuvus79Tak5z/G
+4mqV5S7AWuuuXRroEP3x+6OP3rU5JEO06rrzYpxXl9c+G3lKN50ulG8iMUweqvk6T+WjKvH5P20C
+gYBmjE5NUNrwwRR5NSCOlVKHKEl5N3WXZMnNxd3tX6/S0nv0pphNUUEV1FRJg+e6pKwRq+XP14Nc
+m8Mjphs2qGsJO3+CGgIpKU1W4h9sTTHlOjKJu96+CyLHKiHmsdOXdbarP7Sln3IOBccSgmtbZHMx
+wl8NqOp8Rg+q09x0HYOQyQKBgDsqQQemiRK7VIzcqIrOYJ5pXkNPOYfNxDme8vIIrONeGQ/Cqo95
+IotZ8ls5UONSzkhQXUGxPqbmDlDH2Gbv5NbOO+xjzId37/1JqfvxXrXZyQSEIVZswWm56xJwsJIy
+CQ406/j0Zf8C8Q2ArN8QecxNpsFnyDA99huS8I36Tb+pAoGBAKkXFaej6E21gGULnjI5IlGk1//1
+DCYDnvLOHd5Qfx0UMHIFQtcTPReQyXGPfR6EuD3qxk+nX0i0qZSFV1jW7ZohCaDhVhgIx8bRlcqI
+7aZabcmiQWT0IKrXbhhrHx2Ulok5TOHiNlAkaCOQYO84iANIL7xmNDx8K8rEo8E3bBSC
+-----END RSA PRIVATE KEY-----
+***************************************************************************
+
+EC2_Access_Keys------------------->>>>>>>
+****************** pk-NNTFNFIA756QKGDG6HUQOPN4423UF4VI.pem ****************
+-----BEGIN PRIVATE KEY-----
+MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAM4190NmshwE7tJmOIS6mOrPezmk
+3NahqK3+UouPCH/rx+ZZdN6xoCOfQFb9Iqa3OCFTMOeqq//qlT8dtvO3zSZqInuc8x+zWh3x4yR3
+xOQalbAyR9bCqYV3llvR6vCKR+HCpKhuGTn8uakgw36r3JBUD1PuZOQPxu3rC/kKhqp/AgMBAAEC
+gYEAvQPqafWwPM6oumLIW6FOma0lHmlno7T6kMIVl6a7+8V7rkFBRv858mz+5L2TDY3T/Xfr0+41
+SpcTxo7OLAfGGlLP3r54umAzyWWlbq81TPFxTugdTi243aJhKtnLj5RQVanD7D/IK+89ManJevkU
+4F+FfcquN6mmmmXMItEzQwECQQDqzeVhYWcRsnCM+0TMHM7OLTLtTIqCJ9lVd7LhaeAPLe2/gYND
+jPToLZ8ME2IELHMksSPOkL1VH3YL37i2uJqPAkEA4NNNP3VAHFyH4uqVKKgQxQAhhUvMHqgl//ba
+DdSVv6lfHyeNM1Mu7DX8e3aT5j+I3T+VneKqJ+2Cy/NzYASpEQJAa2wdWCr2u5r2cRl3xSYc2yjE
+ltoguCFBBiAIH6aPkoJBtg6rnhj75skQbbbkbeJkH1JHfnarmCkXmaEV4cqdMwJBAKBemU+Wt3CD
+oHqAkn05xRyBB2gptSR5FQIMd2Y+KcNZcXyrndDqmSHtMHhxEPbAg0Quwu6obG+mwBHzSm1HZcEC
+QQCw3rcLCMkJT/gETsclXsgLbpWxbFKv+7TEv96zBV8Qzm/FmxLP096TrZwBNulHYOiEeuaOwhqj
+XpXdXYNNyrxT
+-----END PRIVATE KEY-----
+***************************************************************************
+
+
+EC2_Access_Certificate------------------->>>>>>>
+****************** cert-NNTFNFIA756QKGDG6HUQOPN4423UF4VI.pem ****************
+-----BEGIN CERTIFICATE-----
+MIICdjCCAd+gAwIBAgIFd7+f3wEwDQYJKoZIhvcNAQEFBQAwUzELMAkGA1UEBhMC
+VVMxEzARBgNVBAoTCkFtYXpvbi5jb20xDDAKBgNVBAsTA0FXUzEhMB8GA1UEAxMY
+QVdTIExpbWl0ZWQtQXNzdXJhbmNlIENBMB4XDTE0MDUwMTA4NDc1OFoXDTE1MDUw
+MTA4NDc1OFowUjELMAkGA1UEBhMCVVMxEzARBgNVBAoTCkFtYXpvbi5jb20xFzAV
+BgNVBAsTDkFXUy1EZXZlbG9wZXJzMRUwEwYDVQQDEwx1YmNsMm8xanA0azEwgZ8w
+DQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM4190NmshwE7tJmOIS6mOrPezmk3Nah
+qK3+UouPCH/rx+ZZdN6xoCOfQFb9Iqa3OCFTMOeqq//qlT8dtvO3zSZqInuc8x+z
+Wh3x4yR3xOQalbAyR9bCqYV3llvR6vCKR+HCpKhuGTn8uakgw36r3JBUD1PuZOQP
+xu3rC/kKhqp/AgMBAAGjVzBVMA4GA1UdDwEB/wQEAwIFoDAWBgNVHSUBAf8EDDAK
+BggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTVbIMjNkYVoI+qUrBr
+X2M2QQsc+jANBgkqhkiG9w0BAQUFAAOBgQC3XdZ2cKCHicioL0sf2CPurRHmfkii
+YSm5grSk8mNwUQ48kP/5UpIzzxaqBlNCMjBZAojB57RW+Zh7IBLJG1EXNzesJH8K
+jhM5Z/JTEp/IwlPiFgtTBKT7r/WP+jRSuE5V3F/I/C+yThDbye6p+TDERQcP2m+n
+x1dNDRmU0znkhA==
+-----END CERTIFICATE-----
+***************************************************************************
