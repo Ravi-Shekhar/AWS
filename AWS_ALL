@@ -36,6 +36,28 @@ sudo vi /var/www/html/index.html
 
 
 
+---------------------------------------------------------------------------------------
+Class3 : S3
+
+http://wiki.vpslink.com/Automate_Backups_with_Amazon_S3_and_s3sync
+
+sudo wget http://mirbsd.mirsolutions.de/cvs.cgi/~checkout~/src/etc/ssl.certs.shar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
