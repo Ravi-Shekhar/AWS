@@ -43,12 +43,32 @@ http://wiki.vpslink.com/Automate_Backups_with_Amazon_S3_and_s3sync
 
 sudo wget http://mirbsd.mirsolutions.de/cvs.cgi/~checkout~/src/etc/ssl.certs.shar
 
+-----------------------------AutoScaling----------------------------------------------------------
+AutoScaling CLI
+--------------------
+path - C:\AWS\autoscaling\AutoScaling-1.0.61.5\bin
+classpath - C:\AWS\autoscaling\AutoScaling-1.0.61.5\lib
+AWS_AUTO_SCALING_HOME = C:\AWS\autoscaling\AutoScaling-1.0.61.5
+
+Launch Config
+----------------
+as-create-launch-config Test_Launch_Config --image-id ami-7feb9d4f --region us-west-2 --instance-type t1.micro
+
+as-describe-launch-configs --region us-west-2
+as-delete-launch-config --region us-west-2 --launch-config Test_Launch_Config
 
 
+Auto Scaling group
+--------------------
+as-describe-launch-configs --region us-west-2
+
+as-create-auto-scaling-group Test_AutoScaling_Group --launch-configuration Test_Launch_Config --region us-west-2 --availability-zones us-west-2a --min-size 1 --max-size 5 --desired-capacity 1
 
 
-
-
+********************************** TODO ******************************************************
+ELB CLI
+AMI - with bootstrap
+ELB - with Https
 
 
 
