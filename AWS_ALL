@@ -34,7 +34,29 @@ sudo vi /var/www/html/index.html
 
 /etc/httpd/conf/httpd.conf
 
+Additional volume need to be mapped as following steps-
+create filesystem on block storage :
+     sudo mkfs -t ext3 /dev/sdb
+Create Directory : sudo mkdir /volume
+mount volume : sudo mount /dev/sdb /volume
+check all device/volume : df -h
 
+write data on volume: 
+cd /volume
+sudo vi test.txt
+sudo mkdir testdir
+
+Resize command:  sudo resize2fs /dev/sdf
+
+unmount device/volume: sudo umount /dev/sdb
+
+---------------------------------------------------------------------
+  Window instance un/pwd
+  **********************
+Public IP	54.186.145.33
+User name	Administrator
+Password	WhM64&gzLc
+----------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Class3 : S3
